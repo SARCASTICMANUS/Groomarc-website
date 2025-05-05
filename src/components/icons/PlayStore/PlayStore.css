@@ -1,0 +1,38 @@
+.play-store {
+    position: absolute;
+    top: 50%;
+    right: 34%;
+    /* background-color: brown; */
+    z-index: 2; 
+    display: flex;
+    justify-content: center; /* Align horizontally */
+    align-items: center; /* Align vertically */
+}
+
+/* Large Desktops (1200px and above) */
+@media (min-width: 1200px) {
+
+  
+}
+
+/* Tablet (768px and below) */
+@media (max-width: 768px) {
+  
+}
+
+/* Mobile (480px and below) */
+@media (max-width: 480px) {
+    .play-store {
+        position: absolute;
+        top: 21%;
+        right: 17%;
+        /* background-color: brown; */
+        width: 30%;
+        z-index: 2; 
+        display: flex;
+        justify-content: center; /* Align horizontally */
+        align-items: center; /* Align vertically */
+    }
+ 
+}
+  

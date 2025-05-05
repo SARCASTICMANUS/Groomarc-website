@@ -1,0 +1,30 @@
+.ScissorsIcon {
+    position: absolute;
+    top: 30%;
+    right: 20%;
+    z-index: 3;
+    /* transform: translate(480px, 20px); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 10px solid #e10e0e; */
+  }
+
+  /* Large Desktops (1200px and above) */
+@media (min-width: 1200px) {
+
+  
+}
+
+/* Tablet (768px and below) */
+@media (max-width: 768px) {
+  
+}
+
+/* Mobile (480px and below) */
+@media (max-width: 480px) {
+ .ScissorsIcon {
+    display: none
+  }
+}
+  

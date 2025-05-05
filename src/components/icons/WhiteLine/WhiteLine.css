@@ -1,0 +1,46 @@
+.WhiteLine {
+  position: absolute;
+  top: 60%;
+  /* right: 0; */
+  /* z-index: 3; */
+  width: 100%; 
+  /* max-width: 1779.47px;  */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: chartreuse; */
+  /* transform: translate(480px, 20px); */
+  /* border: 10px solid #e10e0e; */
+}
+
+/* Large Desktops (1200px and above) */
+@media (min-width: 1200px) {
+
+  
+}
+
+/* Tablet (768px and below) */
+@media (max-width: 768px) {
+  
+}
+
+/* Mobile (480px and below) */
+@media (max-width: 480px) {
+  .WhiteLine {
+    position: absolute;
+    top: 12%;
+    /* right: 0; */
+    /* z-index: 4; */
+    opacity: 0.5;
+    /* width: 100%; */
+    /* background-color: rgb(209, 209, 224); */
+    /* max-width: 1779.47px; */
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: center; */
+    /* background-color: blue; */
+    /* transform: translate(480px, 20px); */
+    /* border: 10px solid #e10e0e; */
+  }
+}
+  

@@ -1,0 +1,68 @@
+.profession-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+     margin-top:-75px;
+     /* margin-left: 100px; */
+    /* justify-content: space-between; */
+     /* margin-left: 100px; */
+    /* margin-right: 100px; */
+    /* margin-bottom: 30px; */
+    /* gap: 0px; Remove gaps for seamless stripes */
+    /* width: 5vh; */
+    /* height: 1vh; */
+    /* background-color: brown; */
+  }
+  
+  .profession-card {
+    width: 249px; /* Box ka width fix */
+    height: 576px; /* Box ka height fix */
+    background-color: #d7ff3e; /* Light green */
+    text-align: center;
+    padding-top: 20px;
+    position: relative;
+  }
+  
+  .profession-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .profession-card:nth-child(odd) {
+    background-color: #D5FF3C; /* Light green for odd cards */
+  }
+  
+  .profession-card:nth-child(even) {
+    background-color: #242C07; /* Black or dark green for even cards */
+  }
+  
+  .profession-card .icon {
+    font-size: 2rem;
+    margin-top: 20px;
+    /* margin-bottom: 10px; */
+  }
+  
+  .profession-image {
+    
+     
+  width: 100%;
+  height: 450px;
+  object-fit: cover; /* Image ko stretch hone se roke aur crop kare */
+  position: relative;
+  }
+  .image-container {
+    width: 100%;
+    /* padding: 50px; */
+    height: 100%;
+    overflow: hidden; /* Jo extra part hai usko hide karega */
+    position: absolute;
+    bottom: 0;
+  }
+  
+  .profession-title {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    font-weight: bold;
+  }
+
+  

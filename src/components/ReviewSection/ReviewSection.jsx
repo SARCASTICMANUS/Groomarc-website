@@ -1,0 +1,211 @@
+import React, { useEffect, useState } from "react";
+import Glide from "@glidejs/glide";
+// import GreenLight from "../../assets/Icons/green-light.svg"
+
+const reviews = [
+  {
+    id: 1,
+    text: "My dream of becoming an influencer and helping people has become a reality. My clients love me with my services mentioned @groomarc. Really loved the platform.",
+    name: "Sonika",
+    role: "Influencer",
+    avatar: "/user2.jpg",
+  },
+  {
+    id: 2,
+    text: "I was able to land the right client for my business.",
+    name: "Radhika",
+    role: "Influencer",
+    avatar: "/user4.jpg",
+  },
+  {
+    id: 3,
+    text: "This made my day as I was able to recover from my wrinkles in a short time.",
+    name: "Aman",
+    role: "Influencer",
+    avatar: "/user1.jpg",
+  },
+  {
+    id: 4,
+    text: "Prolonged efforts made possible here.",
+    name: "Rahul",
+    role: "Influencer",
+    avatar: "/user6.jpg",
+  },
+  {
+    id: 5,
+    text: "I was able to land the right client for my business.",
+    name: "Simon",
+    role: "Influencer",
+    avatar: "/user7.jpg",
+  },
+];
+
+const ReviewSection = () => {
+  const [activeIndex, setActiveIndex] = useState(0);
+
+  useEffect(() => {
+    const slider = new Glide(".glide-01", {
+      type: "carousel",
+      focusAt: "center",
+      perView: 3,
+      autoplay: 3000,
+      animationDuration: 700,
+      gap: 24,
+      breakpoints: {
+        1024: {
+          perView: 2,
+          gap: 16,
+        },
+        640: {
+          perView: 1,
+          gap: 12,
+        },
+      },
+    });
+
+    slider.on("run.after", () => {
+      setActiveIndex(slider.index);
+    });
+
+    slider.on("mount.after", () => {
+      setActiveIndex(slider.index);
+    });
+
+    slider.mount();
+
+    return () => slider.destroy();
+  }, []);
+
+  return (
+    <div>
+      {/* Desktop view */}
+      <section>
+      <div className="hidden  sm:block ">
+      <div className="glide-00 relative  ml-35 py-10 mr-35 ">
+      
+        {/* Slides */}
+        <div className="overflow-hidden" data-glide-el="track">
+        
+          
+          <ul className="glide__slides flex">
+            
+            {reviews.map((review, i) => {
+              const isActive = i === activeIndex;
+              return (
+                <li
+                  key={review.id}
+                  className={`glide__slide transition-all duration-50 ease-in-out transform p-4 flex justify-center ${
+                    isActive
+                      ? "opacity-100 scale-105 z-10"
+                      : "opacity-20 scale-90 z-0"
+                  }`}
+                >
+                  <div className="max-w-md w-full rounded-2xl p-6 text-center text-white bg-gradient-to-r from-[#F8FCED] to-[#F8FCED]">
+                    
+                    <img
+                      src={review.avatar}
+                      alt={review.name}
+                      className="w-16 h-16 rounded-full mx-auto mb-4 ring-2 ring-gray-300 zzshadow-md"
+                    />
+                    <p className="text-gray-700 italic mb-4">“{review.text}”</p>
+                    <h4 className="text-lg font-semibold">{review.name}</h4>
+                    <p className="text-sm text-gray-500">{review.role}</p>
+                  </div>
+                </li>
+              );
+            })}
+          </ul>
+        </div>
+
+        {/* Controls */}
+        <div
+          className="absolute left-0 top-1/2 flex w-full justify-between px-4 -translate-y-1/2"
+          data-glide-el="controls"
+        >
+          <button
+            className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-white border shadow hover:scale-105 transition"
+            data-glide-dir="<"
+            aria-label="prev slide"
+          >
+            ‹
+          </button>
+          <button
+            className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-white border shadow hover:scale-105 transition"
+            data-glide-dir=">"
+            aria-label="next slide"
+          >
+            ›
+          </button>
+        </div>
+      </div>
+      </div>
+      </section>
+
+      {/* Mobile Display */}
+      <section>
+      <div className="block sm:hidden -mt-15 -mb-15">
+      <div className="glide-01 relative w-full">
+      
+        {/* Slides */}
+        <div className="overflow-hidden" data-glide-el="track">
+        
+          
+          <ul className="glide__slides flex">
+            
+            {reviews.map((review, i) => {
+              const isActive = i === activeIndex;
+              return (
+                <li
+                  key={review.id}
+                  className={`glide__slide transition-all duration-50 ease-in-out transform m-20 flex justify-center align-center ${
+                    isActive
+                      ? "opacity-100 scale-80 z-10"
+                      : "hidden scale-50 z-0"
+                  }`}
+                >
+                  <div className=" w-80 h-100  rounded-2xl p-6 text-center text-white bg-gradient-to-r from-[#F8FCED] to-[#F8FCED]">
+                    
+                    <img
+                      src={review.avatar}
+                      alt={review.name}
+                      className="w-26 h-26 mt-8 rounded-full mx-auto mb-4 ring-2 ring-gray-300 zzshadow-md"
+                    />
+                    <p className="text-gray-700 italic mb-4">“{review.text}”</p>
+                    <h4 className="text-black text-2xl font-semibold">{review.name}</h4>
+                    <p className="text-xl text-gray-500">{review.role}</p>
+                  </div>
+                </li>
+              );
+            })}
+          </ul>
+        </div>
+
+        {/* Controls */}
+        <div
+          className="hidden absolute left-0 top-1/2 flex w-full justify-between px-4 -translate-y-1/2"
+          data-glide-el="controls"
+        >
+          <button
+            className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-white border shadow hover:scale-105 transition"
+            data-glide-dir="<"
+            aria-label="prev slide"
+          >
+            ‹
+          </button>
+          <button
+            className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-white border shadow hover:scale-105 transition"
+            data-glide-dir=">"
+            aria-label="next slide"
+          >
+            ›
+          </button>
+        </div>
+      </div>
+      </div>
+      </section>
+    </div>
+    
+  );
+};
+
+export default ReviewSection;
