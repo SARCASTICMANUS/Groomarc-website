@@ -39,20 +39,92 @@ const Arcki = () => {
   return (
      <div
       className="
-        pt-[0px] pb-[20px] overflow-x-hidden z-10 relative
+        pt-[0px] pb-[20px] flex overflow-x-hidden z-10 relative
         max-pt-0 max-[480px]:pb-0 max-[480px]:mb-0
       "
       ref={scrollContainerRef}
-      onMouseEnter={() => setIsHovered(false)}
+      onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(true)}
     >
-      <img
-        src={ArckiSVG}
-        alt="Arcki Scrollable SVG"
-        className="w-[110%] max-w-[110%]"
-      />
+       <iframe
+          className="rounded-[38px] ml-2 lg:w-[330px] lg:h-[533px] w-41 h-73  "
+        
+          
+          src="https://www.youtube.com/embed/vOWkt8aUE94?autoplay=1&mute=1&loop=1&playlist=vOWkt8aUE94&controls=0&modestbranding=1&rel=0"
+          title="Video 1"
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerPolicy="strict-origin-when-cross-origin"
+          allowFullScreen
+        ></iframe>
+
+        <iframe
+          className="rounded-[38px] ml-2 lg:w-[330px] lg:h-[533px] w-41 h-73"
+          
+          src="https://www.youtube.com/embed/BxfgoiqOG_A?autoplay=1&mute=1&loop=1&playlist=BxfgoiqOG_A&controls=0&modestbranding=1&rel=0"
+          title="Video 2"
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerPolicy="strict-origin-when-cross-origin"
+          allowFullScreen
+        ></iframe>
+
+        <iframe
+          className="rounded-[38px] ml-2 lg:w-[330px] lg:h-[533px] w-41 h-73"
+          width="330"
+          height="533"
+          src="https://www.youtube.com/embed/aht2m_HScPQ?autoplay=1&mute=1&loop=1&playlist=aht2m_HScPQ&controls=0&modestbranding=1&rel=0"
+          title="Video 3"
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerPolicy="strict-origin-when-cross-origin"
+          allowFullScreen
+        ></iframe>
+
+        <iframe
+          className="rounded-[38px] ml-2 lg:w-[330px] lg:h-[533px] w-41 h-73"
+          width="330"
+          height="533"
+          src="https://www.youtube.com/embed/nzM_91UYNEs?autoplay=1&mute=1&loop=1&playlist=nzM_91UYNEs&controls=0&modestbranding=1&rel=0"
+          title="Video 4"
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerPolicy="strict-origin-when-cross-origin"
+          allowFullScreen
+        ></iframe>
+          <iframe
+          className="rounded-[38px] ml-2 lg:w-[330px] lg:h-[533px] w-41 h-73"
+          width="330"
+          height="533"
+          src="https://www.youtube.com/embed/BxfgoiqOG_A?autoplay=1&mute=1&loop=1&playlist=BxfgoiqOG_A&controls=0&modestbranding=1&rel=0"
+          title="Video 2"
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerPolicy="strict-origin-when-cross-origin"
+          allowFullScreen
+        ></iframe>
+         <iframe
+          className="rounded-[38px] ml-2 lg:w-[330px] lg:h-[533px] w-41 h-73"
+          width="330"
+          height="533"
+          src="https://www.youtube.com/embed/vOWkt8aUE94?autoplay=1&mute=1&loop=1&playlist=vOWkt8aUE94&controls=0&modestbranding=1&rel=0"
+          title="Video 1"
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerPolicy="strict-origin-when-cross-origin"
+          allowFullScreen
+        ></iframe>
+        
+        
+      
     </div>
   );
 };
 
 export default Arcki;
+
+
+
+
+
+       

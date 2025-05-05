@@ -32,7 +32,7 @@ const CardGrid = () => {
             `}
             >
               {card.isHighlighted && (
-                <div className="flex items-center justify-center bg-[#D5FF3C] overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:scale-105">
+                <div className="flex items-center -mb-2 justify-center bg-[#D5FF3C] overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:scale-115 rounded-2xl">
                   <img
                     src={GreenWithBlack}
                     alt=""

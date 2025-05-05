@@ -1,0 +1,10 @@
+{
+    "applinks": {
+      "details": [
+        {
+          "appID": "KVV69QQ46G.com.groomarc.app",
+          "paths": ["/post/*"]
+        }
+      ]
+    }
+  }

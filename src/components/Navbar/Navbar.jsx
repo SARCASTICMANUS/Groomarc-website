@@ -8,8 +8,8 @@ export default function Navbar() {
   return (
     <>
       {/*<!-- Component: Basic Navbar --> */}
-      <header className="relative z-20 w-full  bg-transparent justify-center  lg:border-slate-200 lg:backdrop-blur-sm ">
-        <div className="relative mx-auto max-w-full px-6 lg:max-w-5xl xl:max-w-7xl 2xl:max-w-[96rem]">
+      <header className="relative z-20 w-full lg:w-full  lg:border-slate-200 lg:backdrop-blur-sm ">
+        <div className="relative mx-auto   max-w-full px-6 lg:max-w-7xl xl:max-w-7xl 2xl:max-w-[100rem]">
           <nav
             aria-label="main navigation"
             className="flex h-[5.5rem] items-stretch justify-between font-medium text-slate-700"
@@ -31,7 +31,7 @@ export default function Navbar() {
             </div>
             {/*      <!-- Mobile trigger --> */}
             <button
-              className={`relative order-10 block h-10 w-10 self-center lg:hidden
+              className={`relative order-10 block h-10 w-10  self-center lg:hidden
                 ${
                   isToggleOpen
                     ? "visible opacity-100 [&_span:nth-child(1)]:w-6 [&_span:nth-child(1)]:translate-y-0 [&_span:nth-child(1)]:rotate-45 [&_span:nth-child(2)]:-rotate-45 [&_span:nth-child(3)]:w-0 "
