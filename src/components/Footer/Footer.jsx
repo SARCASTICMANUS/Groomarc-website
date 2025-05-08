@@ -4,7 +4,7 @@ import FooterCard from "../FooterCard/FooterCard";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#242C07]  text-white  px-6 mt-60 lg:h-140 h-180  py-10 ">
+    <footer className="bg-[#242C07]  text-white  px-6 lg:mt-40 lg:h-140 lg:mb-0  h-180  lg:py-10 lg:w-full w-full py-10 ">
       <FooterCard />
       <div className="max-w-[1200px] mx-auto  lg:mt-[80px]  grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 text-center lg:text-left">
         {/* Logo & Description */}

@@ -6,7 +6,7 @@ import RightMockup from "../../../assets/Icons/RightMock.svg";
 const ExpertCards = () => {
   return (
     // <div className="relative  ">
-    <div className="lg:w-full  flex row lg:m-40 lg:gap-10 gap-2 p-5 absolute z-[1] mt-[15%]  justify-center items-center overflow-hidden">
+    <div className="lg:w-full  flex row lg:m-40  lg:gap-10 gap-3 p-2 absolute z-[1] mt-[15%]  justify-center items-center overflow-hidden">
     
       <div className="bg-white mt-6 rounded-[15px] shadow-md text-center h-[595px] sm:h-[400px]   left-0 flex flex-col items-center justify-center sm:w-[300px] sm:h-auto sm:mt-[8%] sm:p-0 md:w-[340px] md:h-[500px] max-sm:w-[100%] max-sm:h-[240px]">
         <h2 className="text-2xl  text-[#333] mb-2 max-sm:text-sm max-sm:leading-4 max-sm:p-[11%] max-sm:mb-0 p-1 sm:p-2 font-bold">Join the groups</h2>

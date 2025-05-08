@@ -23,15 +23,15 @@ const StackProfile = () => {
       </div>
 
       {/* Small screen categories - only visible on small screens */}
-      <div className="grid grid-cols-[30%_70%] w-full lg:hidden text-xs mt-4">
-        <p className="text-5xl font-bold text-[#A5D80A] flex items-center justify-center p-2 m-0">
+      <div className="grid   grid-cols-[30%_70%] w-full lg:hidden text-xs mt-4">
+        <p className="text-5xl font-bold text-[#A5D80A] flex items-center justify-center ">
           50+
         </p>
-        <h1 className="text-base font-medium text-[#2e2e2e] flex items-center justify-center p-2 m-0">
+        <h1 className="text-base font-medium text-[#2e2e2e] flex items-center justify-center p-0 m-0">
           Available categories for making your journey perfect in order to make your lifestyle fit in perfectly.
         </h1>
       </div>
-    </div>
+    </div> 
   );
 };
 

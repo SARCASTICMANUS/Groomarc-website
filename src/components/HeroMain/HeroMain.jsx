@@ -6,10 +6,10 @@ import HeroImg from "../../assets/Icons/HeroImg.svg"
 
 export default function HeroMain() {
   return (
-    <div className="relative  w-full flex flex-col items-center justify-center z-10">
+    <div className="relative   w-full flex flex-col items-center justify-center z-10">
   
   {/* Gradient Circle behind */}
-  <div className="absolute -top-70 lg:mt-0 mt-20 z-0 lg:h-350 lg:w-350 h-120 w-120 rounded-full bg-[radial-gradient(circle,_rgba(180,222,51,.2)40%,_rgba(255,255,255,.1)60%)] "></div>
+  <div className="absolute  not-only:-top-70 lg:mt-0 mt-20 z-0 lg:h-350 lg:w-350 h-95 w-95 rounded-full bg-[radial-gradient(circle,_rgba(180,222,51,.2)40%,_rgba(255,255,255,.1)60%)] "></div>
 
 
 

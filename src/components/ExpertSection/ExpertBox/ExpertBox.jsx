@@ -12,7 +12,7 @@ const ExpertBox = () => {
       </div>
 
       {/* Heading text */}
-      <div className="lg:mt-[75px] m-7 lg:leading-8 leading-4 max-[480px]:mt-[20px] max-[480px]:leading-[0.4rem] z-[2]">
+      <div className="lg:mt-[75px] m-7 lg:leading-8  max-[480px]:mt-[20px] max-[480px]:leading-[0.7rem] z-[2]">
         <h1 className="text-[24px] mt-0 mb-0 p-0 max-[480px]:text-[20px] font-medium xl:text-[60px] md:text-[30px] sm:text-[20px] xs:text-[20px]">
           World-Class <span className="text-[#d4ff00] ">Experts</span>
         </h1>

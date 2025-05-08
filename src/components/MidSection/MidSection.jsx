@@ -23,7 +23,7 @@ const MidSection = () => {
       </div>
 
       {/* Show SideMockComponent below MidCards on md and below */}
-      <div className="block lg:hidden  mt-4">
+      <div className="block lg:hidden  mt-4 ml-20 w-70 mb-5">
         <SideMockComponent />
       </div>
     </div>

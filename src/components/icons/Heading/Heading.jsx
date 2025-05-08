@@ -64,13 +64,14 @@ const Heading = () => {
     <div className=" block leading-4 ml-10 mb-25 sm:hidden mt-1 text-2xl relative top-0 z-11 sm:text-5xl md:text-6xl  font-bold my-6">
       {/* Desktop Heading */}
       {/* <div className="flex items-center justify-center"> */}
-        <h1 className=" mb-0 py-4">
-          Make Your{" "} 
-          <span className="fixed ">
+        <h1 className=" flex mb-0 py-4">
+          Make Your&nbsp;
+          <div className="w-22 ">
+          <span className=" m-0 ">
             <TypingAnimation text="Fashion" syncIndex={syncIndex} isDeleting={isDeleting} />
-          </span>
-          <span className="ml-23" >Look</span>
-          
+          </span></div>
+          {/* <span className="bg-amber-900  relative" >Look</span> */}
+          &nbsp;Look
         </h1> 
         <h1 className="ml-15 ">
           More{" "}
