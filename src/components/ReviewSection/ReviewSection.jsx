@@ -13,28 +13,28 @@ const reviews = [
   },
   {
     id: 2,
-    text: "I was able to land the right client for my business.",
+    text: "My dream of becoming an influencer and helping people has become a reality. My clients love me with my services mentioned @groomarc. Really loved the platform.",
     name: "Radhika",
     role: "Influencer",
     avatar: "/user4.jpg",
   },
   {
     id: 3,
-    text: "This made my day as I was able to recover from my wrinkles in a short time.",
+    text: "My dream of becoming an influencer and helping people has become a reality. My clients love me with my services mentioned @groomarc. Really loved the platform.",
     name: "Aman",
     role: "Influencer",
     avatar: "/user1.jpg",
   },
   {
     id: 4,
-    text: "Prolonged efforts made possible here.",
+    text: "My dream of becoming an influencer and helping people has become a reality. My clients love me with my services mentioned @groomarc. Really loved the platform.",
     name: "Rahul",
     role: "Influencer",
     avatar: "/user6.jpg",
   },
   {
     id: 5,
-    text: "I was able to land the right client for my business.",
+    text: "My dream of becoming an influencer and helping people has become a reality. My clients love me with my services mentioned @groomarc. Really loved the platform.",
     name: "Simon",
     role: "Influencer",
     avatar: "/user7.jpg",
@@ -96,7 +96,7 @@ const ReviewSection = () => {
     <div>
       {/* Desktop view */}
       <section>
-        <div className="hidden sm:block">
+        <div className="hidden mb-5 sm:block">
           <div className="glide" ref={desktopGlideRef}>
             {/* Slides */}
             <div className="glide__track" data-glide-el="track">
@@ -104,13 +104,13 @@ const ReviewSection = () => {
                 {reviews.map((review) => (
                   <li
                     key={review.id}
-                    className="glide__slide p-4 flex justify-center"
+                    className="glide__slide  p-2 flex justify-center"
                   >
-                    <div className="max-w-md w-full rounded-2xl p-6 text-center text-white bg-gradient-to-r from-[#F8FCED] to-[#F8FCED]">
+                    <div className="max-w-md w-110 h-70  rounded-2xl p-4 text-center text-white bg-gradient-to-r from-[#F8FCED] to-[#F8FCED]">
                       <img
                         src={review.avatar}
                         alt={review.name}
-                        className="w-16 h-16 rounded-full mx-auto mb-4 ring-2 ring-gray-300 shadow-md"
+                        className="w-16 h-16 rounded-full mx-auto mb-4 ring-5 shadow-md"
                       />
                       <p className="text-gray-700 italic mb-4">“{review.text}”</p>
                       <h4 className="text-lg font-semibold">{review.name}</h4>
@@ -123,7 +123,7 @@ const ReviewSection = () => {
 
             {/* Controls */}
             <div
-              className="absolute left-0 top-1/2 flex w-full justify-between px-4 -translate-y-1/2"
+              className="absolute hidden left-0 top-1/2 flex w-full justify-between px-4 -translate-y-1/2"
               data-glide-el="controls"
             >
               <button

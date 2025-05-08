@@ -3,5 +3,11 @@
 body {
   overflow-x: hidden;
   width: 100vws;
+  /* At the top of your global CSS */
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  
 }
+
 

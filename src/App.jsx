@@ -28,7 +28,8 @@ function App() {
   const [count, setCount] = useState(0);
 
   return (
-    < >
+  
+    <>
       
       <Navbar />
       <CombIcon />
@@ -62,16 +63,14 @@ function App() {
        <CreatorSection />
        
       <ReviewSection />
-      <div className="hidden sm:block GreenLight absolute top-970 inset-y-0   right-0 -z-1 h-525  ">
+      <div className="hidden  sm:block GreenLight absolute top-970 inset-y-0   right-0 -z-1 h-450  ">
       <img src={GreenLight} alt="" />
-     </div>
-      {/* <CommunitySection /> */}
+      </div>
       <FaqSection />
-      {/* <div className=""> */}
+      
       
       <Footer />
-      
-      {/* </div> */}
+            
     </>
   );
 }

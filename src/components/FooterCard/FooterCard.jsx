@@ -6,7 +6,7 @@ import GooglePlay from "../../assets/Google Play.svg"
 
 export default function FooterCard() {
   return (
-    <div className="hidden  sm:block flex justify-center items-center -mt-50  h-100vh ">
+    <div className="hidden  sm:block flex justify-center items-center   h-100vh ">
       <div className="flex justify-center items-center w-full">
         <section className="relative bg-[#F8FFDE] text-center w-[1236px] h-[400px] rounded-[15px] z-[1] flex items-center justify-center">
           
