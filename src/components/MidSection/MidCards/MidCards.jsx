@@ -5,11 +5,11 @@ import GreenWithBlack from "../../../assets/GreenWithBlack.svg";
 const CardGrid = () => {
   const cards = [
     { isHighlighted: true },
-    { text: "Personalized Solutions", isHighlighted: false },
-    { text: "Personalized Solutions", isHighlighted: false },
-    { text: "Expert Community", isHighlighted: false },
-    { text: "Expert Community", isHighlighted: false },
-    { text: "Expert Community", isHighlighted: false },
+    { text: "Find Your Color Tone", isHighlighted: false },
+    { text: "Know Your Fit Type", isHighlighted: false },
+    { text: "1:1 Fashion Guidance", isHighlighted: false },
+    { text: "Define Your Style Personality", isHighlighted: false },
+    { text: "Community That Gets You", isHighlighted: false },
   ];
 
   return (
