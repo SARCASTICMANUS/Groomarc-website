@@ -17,7 +17,7 @@ export default function HeroMain() {
   <img 
     src={HeroImg} 
     alt="Hero Group" 
-    className="relative z-10 lg:-mt-0 -mt-12 w-[90%] max-w-[1000px]" 
+    className="relative z-10 lg:-mt-0 -mt-12 w-[96%] max-w-[1000px]" 
   />
   
 </div>

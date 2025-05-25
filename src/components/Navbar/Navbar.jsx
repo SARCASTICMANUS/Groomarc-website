@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import Logo from "../../assets/Icons/new-logo.svg";
 
 export default function Navbar() {
   const [isToggleOpen, setIsToggleOpen] = useState(false);
+  const location = useLocation();
 
   return (
     <header className="relative z-20 w-full lg:border-slate-200 lg:backdrop-blur-sm">
@@ -43,31 +45,31 @@ export default function Navbar() {
             <li className="flex items-stretch">
               <Link
                 to="/"
-                className="flex items-center gap-2 py-4 transition-colors duration-300 hover:text-emerald-500 focus:outline-none lg:px-8"
+                className={`flex items-center gap-2 py-4 transition-colors duration-300 focus:outline-none lg:px-8 ${location.pathname === '/' ? 'text-[#A5D80A] font-bold' : 'hover:text-[#A5D80A]'}`}
               >
                 Home
               </Link>
             </li>
             <li className="flex items-stretch">
               <Link
-                to="/Categories"
-                className="flex items-center gap-2 py-4 text-emerald-500 transition-colors duration-300 hover:text-emerald-600 focus:outline-none lg:px-8"
+                to="/categories"
+                className={`flex items-center gap-2 py-4 transition-colors duration-300 focus:outline-none lg:px-8 ${location.pathname === '/categories' ? 'text-[#A5D80A] font-bold' : 'hover:text-[#A5D80A]'}`}
               >
                 Categories
               </Link>
             </li>
             <li className="flex items-stretch">
               <Link
-                to="/download"
-                className="flex items-center gap-2 py-4 transition-colors duration-300 hover:text-emerald-500 focus:outline-none lg:px-8"
+                to="/about"
+                className={`flex items-center gap-2 py-4 transition-colors duration-300 focus:outline-none lg:px-8 ${location.pathname === '/about' ? 'text-[#A5D80A] font-bold' : 'hover:text-[#A5D80A]'}`}
               >
-                Downloading
+                About Us
               </Link>
             </li>
             <li className="flex items-stretch">
               <Link
                 to="/contact"
-                className="flex items-center gap-2 py-4 transition-colors duration-300 hover:text-emerald-500 focus:outline-none lg:px-8"
+                className={`flex items-center gap-2 py-4 transition-colors duration-300 focus:outline-none lg:px-8 ${location.pathname === '/contact' ? 'text-[#A5D80A] font-bold' : 'hover:text-[#A5D80A]'}`}
               >
                 Contact Us
               </Link>

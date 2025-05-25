@@ -41,7 +41,7 @@ const Heading = () => {
   return (
     <div>
       {/* Laptop screen */}
-        <div className="hidden leading-7 ml-145 mb-5 sm:block text-4xl relative top-0 z-11 font-bold my-6">
+        <div className="hidden leading-12 ml-112 mb-5 sm:block text-6xl relative top-0 z-11 font-bold my-6">
       {/* Desktop Heading */}
       {/* <div className="flex items-center justify-center"> */}
         <h1 className=" py-3">
@@ -61,7 +61,7 @@ const Heading = () => {
 
     {/* Mobile screen */}
 
-    <div className=" block leading-4 ml-10 mb-25 sm:hidden mt-1 text-2xl relative top-0 z-11 sm:text-5xl md:text-6xl  font-bold my-6">
+    <div className=" block leading-4 ml-9 mb-25 sm:hidden mt-1 text-3xl relative top-0 z-11 sm:text-5xl md:text-6xl  font-bold my-6">
       {/* Desktop Heading */}
       {/* <div className="flex items-center justify-center"> */}
         <h1 className=" flex mb-0 py-4">
@@ -71,7 +71,7 @@ const Heading = () => {
             <TypingAnimation text="Fashion" syncIndex={syncIndex} isDeleting={isDeleting} />
           </span></div>
           {/* <span className="bg-amber-900  relative" >Look</span> */}
-          &nbsp;Look
+          &nbsp;&nbsp;&nbsp;&nbsp;Look
         </h1> 
         <h1 className="ml-15 ">
           More{" "}
