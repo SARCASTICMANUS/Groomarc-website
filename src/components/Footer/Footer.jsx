@@ -31,9 +31,15 @@ export default function Footer() {
         <div className="" >
           <h3 className="text-lg font-bold mb-2">Company</h3>
           <ul className="space-y-2 text-sm text-gray-300">
-            <li className="hover:underline cursor-pointer">About</li>
-            <li className="hover:underline cursor-pointer">Careers</li>
-            <li className="hover:underline cursor-pointer">Mobile</li>
+            <li>
+              <a href="/" className="hover:underline cursor-pointer">Home</a>
+            </li>
+            <li>
+              <a href="/categories" className="hover:underline cursor-pointer">Category</a>
+            </li>
+            <li>
+              <a href="/about" className="hover:underline cursor-pointer">About Us</a>
+            </li>
           </ul>
         </div>
 
@@ -41,9 +47,15 @@ export default function Footer() {
         <div className="">
           <h3 className="text-lg font-bold mb-2">Contact</h3>
           <ul className="space-y-2 text-sm text-gray-300">
-            <li className="hover:underline cursor-pointer">Help/FAQ</li>
-            <li className="hover:underline cursor-pointer">Press</li>
-            <li className="hover:underline cursor-pointer">Affiliates</li>
+            <li>
+              <a href="/contactus#policy" className="hover:underline cursor-pointer">Policy</a>
+            </li>
+            <li>
+              <a href="/contactus" className="hover:underline cursor-pointer">Support</a>
+            </li>
+            <li>
+              {/* <a href="/affiliates" className="hover:underline cursor-pointer">Affiliates</a> */}
+            </li>
           </ul>
         </div>
 

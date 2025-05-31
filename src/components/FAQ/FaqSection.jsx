@@ -6,28 +6,33 @@ import React, { useState } from "react";
 const faqData = [
   {
     id: 1,
-    question: "Alright, but what exactly do you do?",
+    question: "What exactly does Groomarc do?",
     answer:
-      "As a creative agency we work with you to develop solutions to address your brand needs. That includes various aspects of brand planning and strategy, marketing and design.",
+      "We help you discover your personal style through 1-on-1 sessions with real fashion coaches and grooming experts — based on your body type, skin tone, and lifestyle.",
   },
   {
     id: 2,
-    question:
-      "I don't need a brand strategist but I need help executing an upcoming campaign?",
+    question: "I'm not into trends. Can Groomarc still help me?",
     answer:
-      "We can absolutely help execute campaigns, handling creative direction, design, and rollout strategies tailored to your needs.",
+      "Absolutely! Groomarc is built for real people. Whether you love fashion or just want to feel confident in what you wear, we guide you to find what suits you, not the internet.",
   },
   {
     id: 3,
-    question: "Are your rates competitive?",
+    question: "Is Groomarc free to use?",
     answer:
-      "Yes. We offer flexible packages based on project scope, and we ensure value through strategic creativity and execution.",
+      "Yes! You can explore content and watch style videos for free. And right now — 1-on-1 expert sessions are also free for early users. (Limited time only.)",
   },
   {
     id: 4,
-    question: "Why do you have a monthly project cap?",
+    question: "Can I trust the experts on Groomarc?",
     answer:
-      "This ensures we dedicate focused creative energy and consistent quality to each project. It's about impact over quantity.",
+      "Definitely. All our fashion coaches, image consultants, and grooming pros are verified, rated, and experienced in real styling work.",
+  },
+  {
+    id: 5,
+    question: "Will Groomarc recommend styles based on my body and skin tone?",
+    answer:
+      "Yes! That’s what makes Groomarc different. Every recommendation is based on your profile — body fit, color tone, and comfort level.",
   },
 ];
 

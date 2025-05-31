@@ -2,7 +2,9 @@ import React from "react";
 // import HeroGroup from "../../assets/HeroGroup.svg";
 // import GroomingLeft from "../../assets/GroomingLeft.svg";
 // import Community from "../../assets/community.svg";
-import HeroImg from "../../assets/Icons/HeroImg.svg"
+// import HeroImg from "../../assets/Icons/HeroImg.svg"
+import HeroImg from "../../assets/Icons/hero.png"
+
 
 export default function HeroMain() {
   return (

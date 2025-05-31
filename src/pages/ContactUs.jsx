@@ -80,7 +80,7 @@ function Policy() {
               {POLICY_CONTENT[activeTab]?.split('\n').map((line, idx) => {
                 // Icon mapping for headings
                 const icons = {
-                  privacy: <span className="inline-block align-middle mr-2 text-[#A5D80A]">🔒</span>,
+                  privacy: <span className="inline-block align-baseline mr-2 text-[#A5D80A]">🔒</span>,
                   cookie: <span className="inline-block align-middle mr-2 text-[#A5D80A]">🍪</span>,
                   delete: <span className="inline-block align-middle mr-2 text-[#A5D80A]">🗑️</span>,
                   contact: <span className="inline-block align-middle mr-2 text-[#A5D80A]">✉️</span>,

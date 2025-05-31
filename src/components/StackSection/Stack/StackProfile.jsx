@@ -13,9 +13,14 @@ const StackProfile = () => {
         <p className="text-[#6d6d6d] text-lg mb-5 max-w-[75%]">
           Standardised categories for all who deserve to be a groomer.
         </p>
-        <Link to="/categories">
+        <Link
+          to="/categories"
+          onClick={() => {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+          }}
+        >
           <button className="border-2 border-[#90c73e] text-[#90c73e] hover:bg-[#90c73e] hover:text-white px-5 py-2 rounded-md text-base font-medium flex items-center gap-1 transition">
-            Explore more <span className="text-xl">→</span>
+            Xplore more <span className="text-xl">→</span>
           </button>
         </Link>
       </div>

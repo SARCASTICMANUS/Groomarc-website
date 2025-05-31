@@ -6,37 +6,37 @@ import "@glidejs/glide/dist/css/glide.theme.min.css";
 const reviews = [
   {
     id: 1,
-    text: "My dream of becoming an influencer and helping people has become a reality. My clients love me with my services mentioned @groomarc. Really loved the platform.",
-    name: "Sonika",
-    role: "Influencer",
+    text: "I always felt confused about what suits my body type. Groomarc’s 1-on-1 session literally changed the way I dress — now I feel confident and comfortable in my own style.",
+    name: "Priya S.",
+    role: "College Student, Delhi",
     avatar: "/user2.jpg",
   },
   {
     id: 2,
-    text: "My dream of becoming an influencer and helping people has become a reality. My clients love me with my services mentioned @groomarc. Really loved the platform.",
-    name: "Radhika",
-    role: "Influencer",
+    text: "I used to waste hours scrolling through fashion videos. Groomarc made it simple — I swiped, found my vibe, and booked a free session. The advice was real and super helpful!",
+    name: "Karan M.",
+    role: "Marketing Executive, Bengaluru",
     avatar: "/user4.jpg",
   },
   {
     id: 3,
-    text: "My dream of becoming an influencer and helping people has become a reality. My clients love me with my services mentioned @groomarc. Really loved the platform.",
-    name: "Aman",
-    role: "Influencer",
+    text: "What I love about Groomarc is the personal connection with users. It’s not just styling — it’s helping people discover their identity through fashion.",
+    name: "Simran Taneja",
+    role: "Fashion Coach on Groomarc",
     avatar: "/user1.jpg",
   },
   {
     id: 4,
-    text: "My dream of becoming an influencer and helping people has become a reality. My clients love me with my services mentioned @groomarc. Really loved the platform.",
-    name: "Rahul",
-    role: "Influencer",
+    text: "I had totally lost track of fashion after becoming a mom. Groomarc helped me build a simple wardrobe that makes me feel ‘me’ again.",
+    name: "Ayesha R.",
+    role: "New Mom, Mumbai",
     avatar: "/user6.jpg",
   },
   {
     id: 5,
-    text: "My dream of becoming an influencer and helping people has become a reality. My clients love me with my services mentioned @groomarc. Really loved the platform.",
-    name: "Simon",
-    role: "Influencer",
+    text: "Groomarc is filling a real gap. Most platforms focus on trends — this one focuses on people. I love working with users who want style that fits them, not the feed.",
+    name: "Aditya Verma",
+    role: "Certified Image Consultant",
     avatar: "/user7.jpg",
   },
 ];
@@ -113,8 +113,8 @@ const ReviewSection = () => {
                         className="w-16 h-16 rounded-full mx-auto mb-4 ring-5 shadow-md"
                       />
                       <p className="text-gray-700 italic mb-4">“{review.text}”</p>
-                      <h4 className="text-lg font-semibold">{review.name}</h4>
-                      <p className="text-sm text-gray-500">{review.role}</p>
+                      <h4 className="text-2xl font-bold text-black mb-1">{review.name}</h4>
+                      <p className="text-base text-gray-600 font-medium">{review.role}</p>
                     </div>
                   </li>
                 ))}
@@ -164,8 +164,8 @@ const ReviewSection = () => {
                         className="w-26 h-26 mt-8 rounded-full mx-auto mb-4 ring-2 ring-gray-300 shadow-md"
                       />
                       <p className="text-gray-700 italic mb-4">“{review.text}”</p>
-                      <h4 className="text-black text-2xl font-semibold">{review.name}</h4>
-                      <p className="text-xl text-gray-500">{review.role}</p>
+                      <h4 className="text-2xl font-bold text-black mb-1">{review.name}</h4>
+                      <p className="text-base text-gray-600 font-medium">{review.role}</p>
                     </div>
                   </li>
                 ))}
