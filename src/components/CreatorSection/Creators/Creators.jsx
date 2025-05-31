@@ -1,6 +1,6 @@
 
 import React from "react";
-import creatorr from "../../../assets/icons/creatorr.png";
+import creatorr from "../../assets/icons/creatorr.png";
 
 
 
