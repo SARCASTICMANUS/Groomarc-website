@@ -7,7 +7,7 @@ import creatorr from "../../../assets/icons/creatorr.png";
 
 function Creators() {
   return (
-    <div className="flex justify-center items-center  h-160 mb-10 -mt-[22px]">
+    <div className="flex justify-center items-center  h-[40rem] mb-10 -mt-[22px]">
       <img
         src={creatorr}
         alt="creatorr"
